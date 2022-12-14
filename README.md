@@ -4,7 +4,7 @@ This project is for educational purposes to learn the basics of Spark, Airflow, 
 
 The architecture of the project is represented by the following:
 
-![my](untitled2.png)
+![my](architecture.png)
 
 Also, the repository consist of:
 * Airflow DAG file that orchestrates the tasks
