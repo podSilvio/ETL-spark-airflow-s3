@@ -1,8 +1,10 @@
 # ETL-spark-airflow-s3
 
-This project is for educational purpose to learn the basics of Spark, Airflow, S3 technologies and ETL process in general. The goal is to connect all those technologies into simple and functinal project.
+This project is for educational purposes to learn the basics of Spark, Airflow, S3 technologies, and the ETL process in general. The goal is to connect all those technologies into a simple and functional project.
 
-The architecture of project is represented like following:
+The architecture of the project is represented by the following:
+
+![my](untitled2.png)
 
 Also, the repository consist of:
 * Airflow DAG file that orchestrates the tasks
@@ -19,19 +21,21 @@ Start the scheduler:  ```airflow scheduler```
 
 Start the web server: ```airflow webserver --port 8080```
 
-Then enable and run specific task!
+Then enable and run specific tasks!
 
 ### Spark
 
 First, install [Spark](https://spark.apache.org/docs/latest/index.html)
 
-Start the Spark Master with : ```spark bin/start-master.sh```
+Start the Spark Master with: ```spark bin/start-master.sh```
 
-Start the Spark Worker with : ```spark bin/start-worker.sh <MASTER_URL>```
+Start the Spark Worker with: ```spark bin/start-worker.sh <MASTER_URL>```
 
 ### S3
 
-Create AWS account and connect python script using Boto3 AWS Python Module (or Airflow hook system)
+Create an AWS account and connect the python script using Boto3 AWS Python Module (or Airflow hook system)
+
+***Note***: This project is based on the idea of [renatootescu](https://github.com/renatootescu) and his [ETL repository](https://github.com/renatootescu/ETL-pipeline)
 
 
 
